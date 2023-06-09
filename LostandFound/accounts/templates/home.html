@@ -47,7 +47,7 @@
       <div class="card mb-4">
         <div class="card-body">
           <h2 class="card-title">{{ Lost_Object.Product_Name }}</h2>
-          <p class="card-text text-muted h6">{{ Lost_Object.Name_and_Roll_no_of_Person }} | {{ Lost_Object.Lost_on }}
+          <p class="card-text text-muted h6">{{ Lost_Object.Email_Id }} | {{ Lost_Object.Lost_on }}
           </p>
           <p class="card-text">{{ Lost_Object.Description|slice:":200" }}</p>
           <a href="{% url 'Lost_Object_detail' Lost_Object.slug %}" class="btn btn-primary">Read More &rarr;</a>
