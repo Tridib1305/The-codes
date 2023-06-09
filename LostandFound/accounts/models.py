@@ -17,6 +17,7 @@ class Lost_Object(models.Model):
     Description=models.TextField()
     Image=models.ImageField(upload_to='Images')
     Status=models.CharField(max_length=10, choices=Status_of_Product, default="Lost")
+    Email_Id=models.EmailField(User.EMAIL_FIELD, default="122201020@smail.iitpkd.ac.in")
 
     class Meta:
         ordering=['-Lost_on']
